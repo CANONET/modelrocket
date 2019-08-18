@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>modelrocket web site</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+
+
+
+<h2>Google</h2>
+
+        <!-- Google  -->
+      <form method=get action="http://www.google.co.jp/search">
+      <table bgcolor="#FFFFFF"><tr><td>
+      <a href="http://www.google.co.jp/">
+      <img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle"></a>
+      <input type=text name=q size=31 maxlength=255 value="">
+      <input type=hidden name=ie value=utf-8>
+      <input type=hidden name=oe value=utf-8>
+      <input type=hidden name=hl value="ja">
+      <input type=submit name=btnG value="Google 検索">
+      </td></tr></table>
+      </form>
+      <!-- Google -->
+
+<h2>現在時刻</h2>
+  <span id="view_clock"></span>
+
+<script type="text/javascript">
+timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
+
+function clock() {
+	document.getElementById("view_clock").innerHTML = getNow();
+}
+
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+
+	//出力用
+	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+	return s;
+}
+</script>
+
+<br><br>
+
+<h1>-元号-</h1>
+
+<script type="text/javascript">
+var year = "2019";var month = "5";var day = "1";var hour = "0";var minute = "0";var centi = "1";
+var convert = "0";var roop = "";
+var cnt1 = "day";var cnt2 = "hour";var cnt3 = "min";var cnt4 = "sec";
+var baseoffset = "none";var cuttime = "";
+var br1 = "1";var br2 = "";var br3 = "";var br4 = "1";
+var com1 = "平成が終るまで";var com2 = "";var com3 = "";var com4 = "令和が始まってから";var end = "1";
+var width = "400";var height = "150";
+var font = "arial";var font2 = "7seg4";var size = "18";var t_size = "30";var l_height = "27";var t_height = "30";var bold = "";var italic = "";var line = "";
+var space = "0px 0px 0px 0px";
+var align = "2";var img = "";
+var color1 = "000000";var color2 = "fcc424 ";var color3 = "FFFFFF";
+</script>
+<script type="text/javascript" src="//countdown.reportitle.com/js/neo1.js"></script><a href="//countdown.reportitle.com/">カウントダウンタイマー</a><script type="text/javascript" src="//countdown.reportitle.com/js/neo2.js"></script>
+<br>
+<a href="javascript:history.go(-1)">[戻る]</a>
+
+</body>
+</html>
